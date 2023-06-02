@@ -19,6 +19,6 @@ export const StyledButton = styled.button`
 	}
 
 	&:focus {
-		border-style: dashed;
+		outline: 1px solid ${COLORS.primary_fuchsia};
 	}
 `

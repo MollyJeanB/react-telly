@@ -1,5 +1,5 @@
 import { HomePage } from './home/home'
-import { Lesson2 } from './home/lesson2'
+import { Lesson2 } from './lesson2'
 
 export {
 	HomePage,

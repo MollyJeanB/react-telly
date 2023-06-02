@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import { PageWrapper } from './home.styles'
-import { Header, GifViewer, Button, TextInput } from '../../components'
-import { useGif } from '../../data/hooks/useGif'
-import { DEFAULT_KEYWORD } from './home'
+import { PageWrapper } from './home/home.styles'
+import { Header, GifViewer, Button, TextInput } from '../components'
+import { useGif } from '../data/hooks/useGif'
+import { DEFAULT_KEYWORD } from './home/home'
 
 export const Lesson2 = () => {
 	const [ keyWord, setKeyWord ] = useState<string>(DEFAULT_KEYWORD) 
@@ -28,7 +28,7 @@ export const Lesson2 = () => {
 				isLoading={isLoading || isFetching} 
 				isNoGifReturned={isNoGifReturned}
 			/>
-			<TextInput  onChange={setKeyWord} placeholder="Enter a keyword" value={keyWord} />
+			<TextInput label='Gif keyword'  onChange={setKeyWord} placeholder="Enter a keyword" value={keyWord} />
 			<Button onClick={onButtonClick}>{ buttonTitle }</Button>
 		</PageWrapper>
 	)
