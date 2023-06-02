@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { SPACING, COLORS } from '../../utils/style/constants'
+import styled from "styled-components"
+import { SPACING, COLORS } from "../../utils/style/constants"
 
 export const TextInputWrapper = styled.div`
 	display: flex;

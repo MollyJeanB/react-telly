@@ -1,7 +1,4 @@
-import { HomePage } from './home/home'
-import { Lesson2 } from './lesson2'
+import { HomePage } from "./home/home"
+import { Lesson2 } from "./lesson2"
 
-export {
-	HomePage,
-	Lesson2,
-}
+export { HomePage, Lesson2 }
