@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { MouseEvent } from 'react'
 import { StyledButton } from './Button.styles'
 
 type Props = {
@@ -8,8 +8,12 @@ type Props = {
 
 export const Button: React.FC<Props> = ( props ) => {
 	const { onClick, children } = props
+	const onClickHandler = (event: MouseEvent) => {
+		event.preventDefault()
+		onClick()
+	}
 	return (
-		<StyledButton role={'button'} onClick={() => onClick()}>
+		<StyledButton role={'button'} onClick={onClickHandler}>
 			{ children }
 		</StyledButton>
 	)

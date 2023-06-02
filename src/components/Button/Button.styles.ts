@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { COLORS, SPACING, FONT_SIZES } from '../../utils/style/constants'
 
 export const StyledButton = styled.button`
+	display: block;
+	margin: 0 auto;
 	padding: ${SPACING.s};
 	border: ${SPACING.xs} solid ${COLORS.primary_freesia};
 	border-radius: ${SPACING.s};
